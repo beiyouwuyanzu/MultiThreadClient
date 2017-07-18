@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 定义一个文本框，它用于显示来自服务器的信息 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="清空记录"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear" />
+
+
+        <TextView
+            android:text="当前在线人数：(本功能仅对会员开放)"
+            android:layout_width="178dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView" />
+
+        <Button
+            android:text="刷新人数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 定义一个文本框，它用于接收用户的输入 -->
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入聊天内容" />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="send"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/show"
+        android:scrollHorizontally="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:background="#ffff"
+        android:textSize="14dp"
+        android:textColor="#f000"/>
+
+</LinearLayout>

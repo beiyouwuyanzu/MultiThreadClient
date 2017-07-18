@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TableLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20sp" android:text="请输入您的注册信息"/>
+
+
+    -<TableRow>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="16sp" android:text="用户名:"/>
+
+    <!-- 定义一个EditText，用于收集用户的账号 -->
+
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:selectAllOnFocus="true" android:hint="请填写想注册的账号" android:id="@+id/name"/>
+
+</TableRow>
+
+
+    -<TableRow>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="16sp" android:text="密码:"/>
+
+    <!-- 用于收集用户的密码 -->
+
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:selectAllOnFocus="true" android:id="@+id/passwd" android:password="true"/>
+
+</TableRow>
+
+
+    -<TableRow>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="16sp" android:text="性别:"/>
+
+    <!-- 定义一组单选框，用于收集用户注册的性别 -->
+
+
+
+    -<RadioGroup android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp" android:text="男" android:id="@+id/male"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp" android:text="女" android:id="@+id/female"/>
+
+</RadioGroup>
+
+</TableRow>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp" android:text="注册" android:id="@+id/bn"/>
+
+</TableLayout>
